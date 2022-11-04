@@ -1,7 +1,7 @@
 # English README
 Buddy simulator 2077(An imagination sequel of Buddy Simulator 1984)
 <br>
-download it and play!
+download it and play and give me some issues![Releases](https://github.com/orangeZSCB/BS2077/releases)
 <br>
 **this game only chinese**
 <br>
@@ -19,7 +19,7 @@ As a programmer, you suddenly became very interested in this game. You are going
 <br>
 一个Buddy Simulator 1984的想象续作。
 <br>
-先下载看看游戏怎么样再在Issues里跟我提建议！
+先下载看看游戏怎么样再在Issues里跟我提建议！[Releases](https://github.com/orangeZSCB/BS2077/releases)
 <br>
 **只有中文**
 <br>
