@@ -23,10 +23,10 @@ void getOsInfo()
     else if (osver.dwMajorVersion == 6 && osver.dwMinorVersion == 1)  
         os_name = "Windows 7";  
     else if (osver.dwMajorVersion == 6 && osver.dwMinorVersion == 2)  
-        os_name = "Windows 10";  
+        os_name = "Windows 10/11";  
       
     cout << os_name;  
-    cout << " " << osver.dwMajorVersion << '.' << osver.dwMinorVersion;  
+    //cout << " " << osver.dwMajorVersion << '.' << osver.dwMinorVersion;  
 }  
 void CC(const char* s, int color)
 {
@@ -109,67 +109,6 @@ int coutsysload(){
 	sl(5000);
 	hh();
 	hhn(1000);
-	cout<<"---------------------------------------------";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                  itch.io                  -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                 Publisher                 -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"-                                           -";
-	sl(60);
-	hh();
-	cout<<"---------------------------------------------";
-	sl(5000);
-	cout<<"\nAlthough idk whether the original author of BuddySim1984 will accept my work, I am willing to die for this work!\nThanks for the inspiration provided by “Not a Sailor Studio”!";
-	sl(5000);
-	cout<<"\n我虽然不知道BuddySim1984的原作者会不会接受我的作品，但是为了这个作品，我也是豁出去了！\n感谢“不是个水手工作室”的灵感提供！" ;
-	sl(5000);
-	hhn(1000);
 	hh();
 	mciSendString(TEXT("open .\\ogg\\opensys.mp3 alias opensys"), NULL, 0,NULL);
 	mciSendString(TEXT("play opensys"), NULL, 0, NULL);
@@ -220,16 +159,16 @@ int coutsysload(){
 }
 int main()
 {
-	system("color 48");
+	system("color 4F");
 	cout<<"注意！"<<endl;
-	cout<<"此游戏没有存档系统。"<<endl;
+	cout<<"此游戏没有存档系统。（以后百分之百会写的！！！）"<<endl;
 	cout<<"如果你不怕丢失进度，你可以继续。"<<endl;
 	cout<<"输入：\n我已知道风险，可以继续了\n即可继续。\n"; 
-	cout<<"还有，游戏期间请不要乱按回车！\n如果看到游戏文件夹有一个txt文件，请务必打开！\n";
+	cout<<"还有，游戏期间请不要乱按回车！\n";
 	cin>>ans;
 	if(ans=="我已知道风险，可以继续了")
 	{
-		system("color 08");
+		system("color 0F");
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |FOREGROUND_GREEN | FOREGROUND_BLUE);
 		cout<<"\n好的，正在加载游戏……\n"; 
 	}else{
@@ -239,12 +178,16 @@ int main()
 	coutsysload();
 	mciSendString(TEXT("open .\\ogg\\openedsys.mp3 alias sweettime"), NULL, 0,NULL);
 	mciSendString(TEXT("play sweettime repeat"), NULL, 0, NULL);
-	cout<<"\n:)\n\(@^0^@)/\n你好！我是你的新智能宠物~\n你叫什么？\n";
+	cout<<"\n:)\n你好！我是你的新智能宠物~\n你叫什么？\n";
 	string name;
 	cin>>name;
 	if(name=="Likia"||name=="LikiaBili"||name=="likia")
 	{
 		cout<<endl<<"Bugkia"<<"......好听的名字！\n你喜欢的颜色是什么？（回答格式：背景+前景 如 08）\n    0 = 黑色       8 = 灰色\n    1 = 蓝色       9 = 淡蓝色\n    2 = 绿色       A = 淡绿色\n    3 = 浅绿色     B = 淡浅绿色\n    4 = 红色       C = 淡红色\n    5 = 紫色       D = 淡紫色\n    6 = 黄色       E = 淡黄色\n    7 = 白色       F = 亮白色\n";
+	}else if(name=="OddGames"||name=="Odd_Games"||name=="odd_games"||name=="Odd_games"
+			||name=="odd_Games")
+	{
+		cout<<endl<<"大人物OddGames"<<"......好听的名字！\n你喜欢的颜色是什么？（回答格式：背景+前景 如 08）\n    0 = 黑色       8 = 灰色\n    1 = 蓝色       9 = 淡蓝色\n    2 = 绿色       A = 淡绿色\n    3 = 浅绿色     B = 淡浅绿色\n    4 = 红色       C = 淡红色\n    5 = 紫色       D = 淡紫色\n    6 = 黄色       E = 淡黄色\n    7 = 白色       F = 亮白色\n";
 	}else{
 		cout<<endl<<name<<"......好听的名字！\n你喜欢的颜色是什么？（回答格式：背景+前景 如 08）\n    0 = 黑色       8 = 灰色\n    1 = 蓝色       9 = 淡蓝色\n    2 = 绿色       A = 淡绿色\n    3 = 浅绿色     B = 淡浅绿色\n    4 = 红色       C = 淡红色\n    5 = 紫色       D = 淡紫色\n    6 = 黄色       E = 淡黄色\n    7 = 白色       F = 亮白色\n";
 	}
@@ -253,17 +196,17 @@ int main()
 	cout<<"\n好的……\n";
 	sl(3000);
 	mciSendString(TEXT("close sweettime"), NULL, 0, NULL);
-	system("color 48");
+	system("color 4F");
 	sl(300);
-	system("color 08");
+	system("color 0F");
 	sl(300);
-	system("color 48");
+	system("color 4F");
 	sl(300);
-	system("color 08");
+	system("color 0F");
 	sl(300);
-	system("color 48");
+	system("color 4F");
 	sl(300);
-	system("color 08");
+	system("color 0F");
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |FOREGROUND_GREEN | FOREGROUND_BLUE);
 	sl(4000);
 	cout<<"\nLOG:\nCOLOR_EDITOR.EXE Broked."; 
@@ -278,18 +221,113 @@ int main()
 	cout<<"\n!OrangesysTester>>  ";
 	string command;
 	cin>>command;
-	if(command=="ORZGAMESYSCOMMAND:/GIVE_ELEPET.EXE_SYSTEM_OP/")
+	while(command!="ORZGAMESYSCOMMAND:/GIVE_ELEPET.EXE_SYSTEM_OP/")
 	{
-		cout<<"\n看来你已经给我权限了。\n";
-	}else{
-		cout<<"command wrong.";
-		sl(5000);
-		return 0;
+		cout<<"!OrangesysTester>>  ";
+		cin>>command;
+		if(command=="ORZGAMESYSCOMMAND:/GIVE_ELEPET.EXE_SYSTEM_OP/")
+		{
+			cout<<"\n看来你已经给我权限了。\n";
+			break;
+		}else{
+			cout<<"command wrong. please retype it after 5 secs.\n";
+			sl(5000);
+			continue;
+		}
 	}
 	sl(3000);
 	cout<<"让我找找这个老旧系统里有什么好van的QWQ\n";
 	sl(3000);
-	cout<<"咦等等，我翻到两个链接，两个名字都是“杰哥与阿伟的黄色故事”，但是有一个是Bilibili的，有一个是YouTube的\n";
+	cout<<"哟，这里有一个叫GamerSkyHub的App\n";
+	sl(3000);
+	cout<<"看起来是某个游戏网站呢\n";
+	sl(3000);
+	cout<<"让我打开看看啦\n";
+	sl(3000);
+	cout<<"Loading com.GamerSkyHub App......\n";
+	sl(3000);
+	system("cls");
+	cout<<"欢迎来到游民星空启动器！"<<endl;
+	cout<<"---------------------------------------------";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-               Gamersky Hub                -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                 Loading..                 -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"-                                           -";
+	sl(60);
+	hh();
+	cout<<"---------------------------------------------";
+	sl(5000);
+	system("cls");
+	cout<<"游民星空俱乐部\n";
+	mciSendString(TEXT("close sweettime"),NULL,0,NULL);
+	mciSendString(TEXT("open .\\ogg\\Funky.mp3 alias gamer"), NULL, 0,NULL);
+	mciSendString(TEXT("play gamer"), NULL, 0, NULL);
+	cout<<"请选择游戏：\n1.超级马力欧\n2.贪吃蛇\n输入序号以打开游戏\n";
+	cin>>ans;
+	if(ans=="1")
+	{
+		int a;
+		a=MessageBox(0,"ELEPET.exe不包含对系统的写入权限，请在游戏目录中找到gamersky/supermario/Mario.exe打开。","OrangeGameSystem-Tips",MB_OK);
+	}
+	if(ans=="2")
+	{
+		int a;
+		a=MessageBox(0,"ELEPET.exe不包含对系统的写入权限，请在游戏目录中找到gamersky/Snake/Snake.exe打开。","OrangeGameSystem-Tips",MB_OK);
+	}
+	mciSendString(TEXT("close gamer"),NULL,0,NULL);
+	system("cls");
+	cout<<"我陪你一起玩完直到你输入任何内容。";
+	cin>>ans;
+	mciSendString(TEXT("open .\\ogg\\openedsys.mp3 alias sweettime"), NULL, 0,NULL);
+	mciSendString(TEXT("play sweettime repeat"), NULL, 0, NULL);
+	cout<<"咦等等，我又翻到两个链接，两个名字都是“杰哥与阿伟的黄色故事”，但是有一个是Bilibili的，有一个是YouTube的\n";
 	sl(3000);
 	cout<<"顺便说下，你现在可以访问YouTube吗？(回答Yes或者No)\n";
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
@@ -311,7 +349,7 @@ int main()
 	cout<<"你看完啦？\n" ;
 	sl(3000);
 	cout<<"由于我看不到你的屏幕内容，能给我讲讲吗？\n";
-	sl(5000);
+	sl(1000);
 	cout<<"就算你不解释，我也知道这玩意的内容一定是那种涩涩的内容qwq\n因为我看到了“黄色”\n哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈";
 	sl(3000);
 	cout<<"\n让我再翻翻……\n";
@@ -369,7 +407,7 @@ int main()
 	Sleep(10000); 
 	return 0; 
 }
-//941763=Orange=Arthor 
+//941763=Orange=Author 
 /*
 COLOR [attr]
 
@@ -398,4 +436,21 @@ COLOR [attr]
  COLOR 命令，COLOR 命令会将 ERRORLEVEL 设置为 1。
 
 示例: "COLOR fc" 在亮白色上产生淡红色
+#include<windows.h>
+#include<bits/stdc++.h>
+int main() {
+	int a;
+	a=MessageBox(0,"Are you OK?","Question",MB_YESNO);
+	if(a==6)
+	{
+		MessageBox(0,"You are OK.","Caption",MB_OK);
+	}
+	else
+	{
+		MessageBox(0,"You aren\'t' OK.","Caption",MB_OK);
+	}
+
+	return 0;
+} 
+
 */
