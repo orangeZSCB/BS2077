@@ -1,0 +1,62 @@
+[Project]
+FileName=Buddy Simulator 2077.dev
+Name=Buddy Simulator 2077
+Type=1
+Ver=2
+ObjFiles=
+Includes=
+Libs=
+PrivateResource=
+ResourceIncludes=
+MakeIncludes=
+Compiler=
+CppCompiler=
+Linker=-lwinmm_@@_
+IsCpp=1
+Icon=
+ExeOutput=
+ObjectOutput=
+LogOutput=
+LogOutputEnabled=0
+OverrideOutput=0
+OverrideOutputName=Buddy Simulator 2077.exe
+HostApplication=
+UseCustomMakefile=0
+CustomMakefile=
+CommandLine=
+Folders=
+IncludeVersionInfo=0
+SupportXPThemes=0
+CompilerSet=0
+CompilerSettings=0000000000000000000000000
+UnitCount=1
+
+[VersionInfo]
+Major=1
+Minor=0
+Release=4
+Build=1
+LanguageID=2052
+CharsetID=1252
+CompanyName=(c) 2025 Orange Game Studio
+FileVersion=1.0.4.1
+FileDescription=A terminal game that powered by C++
+InternalName=Game.cpp
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=Game.cpp
+ProductName=Buddy Simulator 2077
+ProductVersion=1.0.4.1
+AutoIncBuildNr=0
+SyncProduct=1
+
+[Unit1]
+FileName=Game.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
